@@ -1,0 +1,11 @@
+{
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.sortImports.args": ["-rc", "-sp .isort.cfg"],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "python.pythonPath": "/home/venelin/.local/share/virtualenvs/Reproducible-ML-with-DVC-ZwCvuEPB/bin/python"
+}
