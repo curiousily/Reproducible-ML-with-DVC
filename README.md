@@ -47,7 +47,8 @@ Create features
 
 ```
 dvc run -f assets/features.dvc \
-    -d studentpredictor/create_features.py -d assets/data \
+    -d studentpredictor/create_features.py \
+    -d assets/data \
     -o assets/features \
     python studentpredictor/create_features.py
 ```
@@ -56,7 +57,8 @@ Train model
 
 ```
 dvc run -f assets/models.dvc \
-    -d studentpredictor/train_model.py -d assets/features \
+    -d studentpredictor/train_model.py \
+    -d assets/features \
     -o assets/models \
     python studentpredictor/train_model.py
 ```
@@ -65,8 +67,10 @@ Evaluate the model and save metrics (RMSE and r^2)
 
 ```
 dvc run -f assets/evaluate.dvc \
-    -d studentpredictor/evaluate_model.py -d assets/features \
-    -d assets/models -M assets/metrics.json \
+    -d studentpredictor/evaluate_model.py \
+    -d assets/features \
+    -d assets/models \
+    -M assets/metrics.json \
     python studentpredictor/evaluate_model.py
 ```
 

@@ -1,0 +1,14 @@
+md5: 35880e4bf5278d37774af4f3050a222a
+cmd: python studentpredictor/create_features.py
+wdir: ..
+deps:
+- md5: 74bdd6d4c2ffcaae3c5ba2b0cd909ea3
+  path: studentpredictor/create_features.py
+- md5: 6ca07cc8d187d6108094e0c34628f3b7.dir
+  path: assets/data
+outs:
+- md5: 4613fa24e5088ab56cbe215b2e2ee10c.dir
+  path: assets/features
+  cache: true
+  metric: false
+  persist: false
