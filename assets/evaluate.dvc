@@ -1,4 +1,4 @@
-md5: 538d0bb965fc78229975012b3ae570fb
+md5: 7db0cc9ed9c11d2089b0fd0836948dcd
 cmd: python studentpredictor/evaluate_model.py
 wdir: ..
 deps:
@@ -6,10 +6,10 @@ deps:
   path: studentpredictor/evaluate_model.py
 - md5: 4613fa24e5088ab56cbe215b2e2ee10c.dir
   path: assets/features
-- md5: afd1065e52849fcee32e2a33fc339ee0.dir
+- md5: 94f2233f9b16d562962206d3bcfe3c4f.dir
   path: assets/models
 outs:
-- md5: 8c1103709f10e720bb1e40524caa06a0
+- md5: 763ebc3915ad23cc8e501e43adf146bd
   path: assets/metrics.json
   cache: false
   metric: true
